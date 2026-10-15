@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.4+-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/AI_SDK-Vercel-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel AI SDK" />
+  <img src="https://img.shields.io/badge/AI--Assisted-Engineering-7C3AED?style=for-the-badge&logo=anthropic&logoColor=white" alt="AI-Assisted Engineering" />
   <img src="https://img.shields.io/badge/Conventional_Commits-1.0.0-FE5196?style=for-the-badge&logo=conventionalcommits&logoColor=white" alt="Conventional Commits" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
@@ -26,6 +27,7 @@
 - [Environment Variables](#-environment-variables)
 - [Development Scripts](#-development-scripts)
 - [Commit Conventions](#-commit-conventions)
+- [AI Assistance & Workflow](#-ai-assistance--engineering-workflow)
 - [Capstone Milestones](#-capstone-milestones)
 - [License & Author](#-license--author)
 
@@ -222,6 +224,30 @@ Format:
 - `build`: Dependency or build tool updates
 - `ci`: CI/CD workflow configuration updates
 - `chore`: Repository maintenance and housekeeping
+
+---
+
+## 🤖 AI Assistance & Engineering Workflow
+
+This capstone project incorporates a rigorous AI-assisted engineering workflow governed by [CLAUDE.md](file:///h:/PGH%20Project/flyrank-frontend-ai-capstone/CLAUDE.md):
+- **Autonomous Scaffolding & Validation**: Architecture boundaries, TypeScript interfaces, and lint rules are validated against strict quality thresholds.
+- **Streaming Pipeline Architecture**:
+  ```plaintext
+  [User Action / Query]
+          │
+          ▼
+  [React Server Component / Client Hook]
+          │ (POST /api/ai/...)
+          ▼
+  [Route Handler + Vercel AI SDK] ──► [LLM Provider (OpenAI / Anthropic)]
+          │                                      │
+          ▼                                      ▼
+  [Chunked Token DataStream] ◄───────────────────┘
+          │
+          ▼
+  [Zero-CLS Streaming Renderer]
+  ```
+- **Context & Prompt Governance**: System prompts and schemas are centralized under `lib/ai/` with Zod validation to ensure deterministic, hallucination-resistant structured outputs.
 
 ---
 

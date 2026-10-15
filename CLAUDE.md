@@ -207,6 +207,11 @@ flyrank-frontend-ai-capstone/
 4. **Human-in-the-Loop Controls**:
    - Provide intuitive UI controls for AI responses: Stop generating, Copy text, Regenerate answer, and Feedback rating (thumbs up/down).
 
+5. **AI Pair Programming & Prompt Governance**:
+   - Cache static system prompts and use concise prompt templates to minimize token overhead.
+   - Separate reasoning prompts from presentation schemas to avoid markdown formatting anomalies.
+   - Ensure all AI-generated code conforms strictly to the TypeScript, Next.js App Router, and Conventional Commits standards defined in this guide.
+
 ---
 
 ## 📝 Conventional Commits Specification
